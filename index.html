@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Melodia Landing Page</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#4913ec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#151022",
+              "background-secondary-purple": "#4913ec",
+            },
+            fontFamily: {
+              display: ["Spline Sans"],
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+    <header class="sticky top-0 z-50 w-full border-b border-primary/20 dark:border-primary/30 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+        <div class="container mx-auto flex items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+            <a class="flex items-center gap-2" href="#">
+                <img
+                    alt="Logo do Melodia"
+                    class="h-8 w-8"
+                    src=".\src\assets\melodia_logo.png"/>
+                <h2 class="text-xl font-bold text-gray-900 dark:text-white">
+                    Melodia
+                </h2>
+            </a>
+        <nav class="hidden items-center gap-8 md:flex">
+            <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="#">
+                Recursos
+            </a>
+            <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="#">
+                Planos
+            </a>
+            <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="#">
+                Suporte
+            </a>
+        </nav>
+            <button onclick=""
+                class="flex items-center justify-center gap-1 rounded-full bg-primary px-2 sm:px-4 md:px-6 py-1 sm:py-2 md:py-2 text-sm sm:text-base md:text-lg font-bold text-white shadow-lg transition-transform hover:scale-105 cursor-pointer">
+                Baixar o App
+            </button>
+        </div>
+        <div class="block md:hidden" style="background-color: rgba(44, 34, 72, 0.137);">
+            <nav class="flex items-center justify-center text-center container mx-auto px-4 py-2 flex items-center gap-8">
+                <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+                    Recursos
+                </a>
+                <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+                    Planos
+                </a>
+                <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+                    Suporte
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="relative overflow-hidden py-20 sm:py-32">
+            <video autoplay muted loop playsinline
+                class="absolute inset-0 w-full h-full object-cover pointer-events-none z-0">
+            <source src="./src/assets/video_fundo.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+            <div class="absolute inset-0" style="background-color: rgba(21, 16, 34, 0.9);"></div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center gap-6 h-[30vh] sm:h-[40vh] md:h-[60vh] lg:h-[70vh] px-4 sm:px-6 lg:px-8 relative z-20">
+            <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter text-gray-900 dark:text-white">
+                Sua Música, Sua Forma
+            </h1>
+            <p class="max-w-xl text-sm sm:text-lg md:text-xl text-white text-gray-600 dark:text-gray-300">
+                Explore um universo sonoro feito para você. Crie playlists, descubra novos artistas e ouça suas músicas favoritas com a melhor qualidade de áudio, onde e quando quiser.
+            </p>
+            <button
+                onclick=""
+                class="flex items-center justify-center gap-2 rounded-full bg-primary px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base md:text-lg font-bold text-white shadow-lg transition-transform hover:scale-105 cursor-pointer">
+                <span class="material-symbols-outlined">play_arrow</span>
+                Ouvir Agora
+            </button>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex justify-between bg-gradient-to-b from-[#310c9f] to-[#8e49ec] mb-40">
+                <img src="./src/assets/melodia_logo.png" alt="" class="h-10 w-10 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12">
+                <img src="./src/assets/melodia_logo.png" alt="" class="h-10 w-10 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12">
+                <img src="./src/assets/melodia_logo.png" alt="" class="h-10 w-10 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12">
+                <img src="./src/assets/melodia_logo.png" alt="" class="h-10 w-10 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12">
+                <img src="./src/assets/melodia_logo.png" alt="" class="h-10 w-10 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12">
+                <img src="./src/assets/melodia_logo.png" alt="" class="h-10 w-10 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12">
+                <img src="./src/assets/melodia_logo.png" alt="" class="h-10 w-10 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12">
+                <img src="./src/assets/melodia_logo.png" alt="" class="h-10 w-10 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 hidden lg:inline-block">
+                <img src="./src/assets/melodia_logo.png" alt="" class="h-10 w-10 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 hidden lg:inline-block">
+                <img src="./src/assets/melodia_logo.png" alt="" class="h-10 w-10 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 hidden lg:inline-block">
+                <img src="./src/assets/melodia_logo.png" alt="" class="h-10 w-10 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 hidden sm:inline-block">
+                <img src="./src/assets/melodia_logo.png" alt="" class="h-10 w-10 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 hidden md:inline-block">
+                <img src="./src/assets/melodia_logo.png" alt="" class="h-10 w-10 sm:h-8 sm:w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 hidden lg:inline-block">
+            </div>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-10 mb-40 text-center">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-6xl sm:text-6xl md:text-7xl lg:text-8xl font-black">
+                        737K
+                    </h2>
+                    <p>Usuários ativos</p>
+                </div>
+                <div class="flex-shrink-0 w-24 h-[1px] md:w-[1px] md:h-24 bg-gradient-to-r md:bg-gradient-to-b from-[#151022] via-[#4913ec] to-[#151022]"></div>
+                <div class="flex flex-col items-center">
+                    <h2 class="text-6xl sm:text-6xl md:text-7xl lg:text-8xl font-black">
+                        1.2M
+                    </h2>
+                    <p>Playlists criadas</p>
+                </div>
+                <div class="flex-shrink-0 w-24 h-[1px] md:w-[1px] md:h-24 bg-gradient-to-r md:bg-gradient-to-b from-[#151022] via-[#4913ec] to-[#151022]"></div>
+                <div class="flex flex-col items-center">
+                    <h2 class="text-6xl sm:text-6xl md:text-7xl lg:text-8xl font-black">
+                        56M
+                    </h2>
+                    <p>Músicas ouvidas</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="mx-4 sm:mx-6 md:mx-10 lg:mx-20 p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-3">
+                <img src="./src/assets/fox_b2.png" alt="" class="hidden lg:block h-[26rem] lg:h-[36rem] w-auto rounded-lg flex-shrink-0">
+                <div class="flex flex-col items-center text-center lg:items-start lg:text-left gap-5 m-10">
+                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
+                        Quem somos?
+                    </h1>
+                    <h2 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-2xl mb-5">
+                        A revolução do streaming com inteligência artificial
+                    </h2>
+                    <p class="text-xs tracking-tight text-gray-900 dark:text-white sm:text-sm">
+                      Combinamos tecnologia de ponta e paixão pela música para transformar a maneira como você ouve cada batida. Nosso aplicativo de streaming com inteligência artificial vai muito além das playlists tradicionais: ele entende seus hábitos, identifica seus momentos do dia e se adapta ao seu estilo de vida. Imagine começar a manhã com músicas energéticas para dar ânimo, durante o trabalho receber sugestões que ajudam na concentração e, à noite, mergulhar em sons relaxantes escolhidos especialmente para você. <br><br> Tudo isso sem esforço, a IA aprende constantemente com suas preferências, evoluindo junto com o seu gosto musical. Além disso, você pode explorar versões exclusivas de suas músicas favoritas, com remixes instantâneos, mashups dinâmicos e descobertas de artistas que combinam perfeitamente com seu perfil. É como ter um DJ pessoal 24 horas por dia, pronto para criar a trilha sonora perfeita para cada momento da sua vida. <br><br> Mais do que ouvir, você vai viver a música de um jeito único, inteligente e surpreendente.</p>
+                    <button class="flex items-center justify-center gap-1 rounded-full bg-primary px-2 sm:px-4 md:px-6 py-1 sm:py-2 md:py-2 text-sm sm:text-base md:text-lg font-bold text-white shadow-lg transition-transform hover:scale-105 cursor-pointer"">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-4 sm:p-6 lg:p-8 mt-10 ml-10 mr-10">
+                <div class="bg-gradient-to-b from-[#4913ec] to-[#8e49ec] hover:to-[#4913ec] transition-opacity duration-300 hover:opacity-50 rounded-lg flex flex-col items-center text-center p-10 gap-3">
+                    <h3 class="text-lg md:text-xl lg:text-2xl font-bold text-center">
+                        Adaptação da música ao seu ambiente
+                    </h3>
+                    <p class="text-xs md:text-lm lg:text-base">
+                        O app pode usar sensores do celular (microfone, GPS, acelerômetro) para alterar ritmo, intensidade ou instrumentos conforme o ambiente ou atividade.</p>
+                </div>
+                <div class="bg-gradient-to-b from-[#4913ec] to-[#8e49ec] hover:to-[#4913ec] transition-opacity duration-300 hover:opacity-50 rounded-lg flex flex-col items-center text-center p-10 gap-3">
+                    <h3 class="text-lg md:text-xl lg:text-2xl font-bold text-center">
+                        DJ virtual
+                    </h3>
+                    <p class="text-xs md:text-lm lg:text-base">
+                        A Assistente musical inteligente entende seu humor e contexto, podendo remixar, sugerir ou até criar mashups em tempo real, garantindo uma experiência sempre nova e dinâmica.</p>
+                </div>
+                <div class="bg-gradient-to-b from-[#4913ec] to-[#8e49ec] hover:to-[#4913ec] transition-opacity duration-300 hover:opacity-50 rounded-lg flex flex-col items-center text-center p-10 gap-3">
+                    <h3 class="text-lg md:text-xl lg:text-2xl font-bold text-center">
+                        Remix instantâneo de músicas favoritas
+                    </h3>
+                    <p class="text-xs md:text-lm lg:text-base">
+                        A IA pode pegar suas músicas já salvas e remixar automaticamente com diferentes estilos, batidas ou instrumentos, criando versões únicas a cada reprodução.</p>
+                </div>
+            </div>
+            <div class="w-full h-[1px] bg-gradient-to-r from-[#151022] via-[#4913ec] to-[#151022] mt-20"></div>
+        </section>
+
+        <section class="py-16 sm:py-24 mt-10 ml-10 mr-10">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+                    Recursos do Melodia
+                </h2>
+                <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+                  Explore o que torna o Melodia a sua melhor companhia musical.
+                </p>
+            </div>
+            <div class="mt-16 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+              <div class="text-center">
+                <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <span class="material-symbols-outlined text-4xl">
+                    high_quality
+                  </span>
+                </div>
+                <h3 class="mt-6 text-xl font-bold text-gray-900 dark:text-white">
+                  Streaming de Alta Qualidade
+                </h3>
+                <p class="mt-2 text-base text-gray-600 dark:text-gray-300">
+                  Ouça suas músicas favoritas na melhor qualidade de áudio, sem
+                  interrupções.
+                </p>
+              </div>
+              <div class="text-center">
+                <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <span class="material-symbols-outlined text-4xl">
+                    queue_music
+                  </span>
+                </div>
+                <h3 class="mt-6 text-xl font-bold text-gray-900 dark:text-white">
+                  Playlists Personalizadas
+                </h3>
+                <p class="mt-2 text-base text-gray-600 dark:text-gray-300">
+                  Deixe que nossa inteligência artificial crie playlists perfeitas
+                  para cada momento do seu dia.
+                </p>
+              </div>
+              <div class="text-center">
+                <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <span class="material-symbols-outlined text-4xl">
+                    cloud_off
+                  </span>
+                </div>
+                <h3 class="mt-6 text-xl font-bold text-gray-900 dark:text-white">
+                  Modo Offline
+                </h3>
+                <p class="mt-2 text-base text-gray-600 dark:text-gray-300">
+                  Baixe suas músicas e playlists para ouvir onde quiser, mesmo sem
+                  conexão com a internet.
+                </p>
+              </div>
+              <div class="text-center">
+                <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <span class="material-symbols-outlined text-4xl">
+                    artist
+                  </span>
+                </div>
+                <h3 class="mt-6 text-xl font-bold text-gray-900 dark:text-white">
+                  Descoberta de Novos Artistas
+                </h3>
+                <p class="mt-2 text-base text-gray-600 dark:text-gray-300">
+                  Explore novos talentos e gêneros com nossas recomendações e
+                  rádios de artistas.
+                </p>
+              </div>
+            </div>
+      </section>
+
+      <section class="py-16 sm:py-24">
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ml-10 mr-10">
+            <div class="bg-[#43346e]/50 hover:bg-gradient-to-b from-[#4913ec] to-[#8e49ec] transition-transform duration-500 hover:scale-105 cursor-pointer flex flex-col gap-4 rounded-lg p-4 sm:p-6 md:p-8 shadow-lg">
+              <div class="flex items-center gap-2 sm:gap-4 md:gap-6">
+                <img
+                  alt="Foto de Sofia Almeida"
+                  class="h-14 w-14 rounded-full object-cover"
+                  src="./src/assets/usuario_sofia.png"/>
+                <div>
+                  <p class="font-bold text-gray-900 dark:text-white">
+                    Sofia Almeida
+                  </p>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">
+                    Usuária Melodia
+                  </p>
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                "Melodia transformou a forma como ouço música. A variedade de
+                gêneros e a qualidade do som são incríveis!"
+              </p>
+            </div>
+            <div class="bg-[#43346e]/50 duration-500 hover:bg-gradient-to-b from-[#4913ec] to-[#8e49ec] transition-transform hover:scale-105 cursor-pointer flex-col gap-4 rounded-lg p-6 shadow-lg">
+              <div class="flex items-center gap-4">
+                <img
+                  alt="Foto de Carlos Mendes"
+                  class="h-14 w-14 rounded-full object-cover"
+                  src="./src/assets/usuario_carlos.png"/>
+                <div>
+                  <p class="font-bold text-gray-900 dark:text-white">
+                    Carlos Mendes
+                  </p>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">
+                    Usuário Melodia
+                  </p>
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                "A interface é intuitiva e as recomendações são sempre
+                certeiras. Encontrei músicas que nunca imaginaria ouvir."
+              </p>
+            </div>
+            <div class="bg-[#43346e]/50 duration-500 hover:bg-gradient-to-b from-[#4913ec] to-[#8e49ec] transition-transform hover:scale-105 cursor-pointer flex-col gap-4 rounded-lg p-6 shadow-lg">
+              <div class="flex items-center gap-4">
+                <img
+                  alt="Foto de Ana Beatriz"
+                  class="h-14 w-14 rounded-full object-cover"
+                  src="./src/assets/usuario_ana.png"/>
+                <div>
+                  <p class="font-bold text-gray-900 dark:text-white">
+                    Ana Beatriz
+                  </p>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">
+                    Usuária Melodia
+                  </p>
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300">
+                "O melhor aplicativo de música que já usei. A possibilidade de
+                criar playlists colaborativas é um diferencial enorme!"
+              </p>
+            </div>
+          </div>
+      </section>
+
+      <section>
+        <div class="p-1 bg-gradient-to-b from-[#4913ec] to-[#8e49ec] rounded-xl m-2 sm:m-2 md:m-4 lg:m-10 lg:ml-80 lg:mr-80">
+          <div class="bg-background-dark rounded-xl flex flex-col items-center text-center justify-center gap-6">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mt-5">
+              Receba Atualizações
+            </h1>
+            <p class="mt-4 text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-300">
+              Fique por dentro! Insira seu e-mail e descubra em primeira mão todas as novidades e funcionalidades incríveis do nosso app.
+            </p>
+            <div class="flex gap-2 justify-between mb-5">
+              <input type="email" placeholder="Seu email" class="rounded-full transition-transform hover:scale-105"/>
+              <button class="flex items-center justify-center gap-1 rounded-full bg-primary px-2 sm:px-4 md:px-6 py-1 sm:py-2 md:py-2 text-sm sm:text-base md:text-lg font-bold text-white shadow-lg transition-transform hover:scale-105 cursor-pointer">
+                Enviar
+              </button>
+            </div>
+          </div>
+        </div>  
+      </section>
+    </main>
+
+    <footer class="border-t border-primary/20 dark:border-primary/30 bg-background-light/50 dark:bg-background-dark/50">
+      <div class="container mx-auto px-4 py-10 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center justify-between gap-8 md:flex-row">
+          <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 md:justify-start">
+            <a class="text-sm text-gray-600 dark:text-gray-300 hover:text-primary"
+              href="#">
+              Sobre nós
+            </a>
+            <a class="text-sm text-gray-600 dark:text-gray-300 hover:text-primary"
+              href="#">
+              Carreiras
+            </a>
+            <a class="text-sm text-gray-600 dark:text-gray-300 hover:text-primary"
+              href="#">
+              Imprensa
+            </a>
+            <a class="text-sm text-gray-600 dark:text-gray-300 hover:text-primary"
+              href="#">
+              Contato
+            </a>
+          </div>
+          <div class="flex justify-center gap-4">
+            <a class="text-gray-500 dark:text-gray-400 hover:text-primary"
+              href="#">
+              <img src="./src/assets/instagram_icon.png" alt="Ícone do Instagram" class="h-6 w-6"/>
+            </a>
+            <a class="text-gray-500 dark:text-gray-400 hover:text-primary"
+              href="#">
+              <img src="./src/assets/facebook.png" alt="Ícone do Facebook" class="h-6 w-6"/>
+            </a>
+            <a class="text-gray-500 dark:text-gray-400 hover:text-primary"
+              href="#">
+              <img src="./src/assets/tiktok.png" alt="Ícone do Tiktok" class="h-6 w-6"/>
+            </a>
+          </div>
+        </div>
+        <div
+          class="mt-8 border-t border-primary/20 dark:border-primary/30 pt-8 text-center text-sm text-gray-500 dark:text-gray-400">
+          <p>© 2024 Melodia. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
