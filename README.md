@@ -1,4 +1,7 @@
-# 🎵 Music Store Landing Page
+*Ana Luiza Tibiriçá da Paixão - RM562098 <br/>
+Luara Martins de Oliveira Ramos - RM565573*
+
+# 🎵 Melodia Music
 
 Uma landing page responsiva e moderna para uma loja de música, criada com foco em Front-End utilizando **Tailwind CSS**. A página simula uma vitrine online, com uma interface atrativa e player de música funcional.
 
@@ -14,7 +17,7 @@ A página permite ao usuário visualizar informações sobre a loja e ouvir uma 
 
 ## 🖼️ Demonstração
 
-<img src="screenshot.png" alt="Screenshot da landing page" width="700"/>
+<img src="https://github.com/user-attachments/assets/a8946963-418e-4ce4-b625-f98cdf056a35" alt="Screenshot da landing page" width="700"/>
 
 ---
 
